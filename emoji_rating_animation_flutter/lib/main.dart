@@ -232,7 +232,7 @@ class CirclePainter extends CustomPainter {
     canvas.drawArc(rect, startRad, rad, false, paint);
     canvas.drawArc(rect, startRad, -rad, false, paint);
 
-    var mouthCenter = Offset(0, 50);
+    var mouthCenter = const Offset(0, 50);
     var mouthDownRadius = 50 * rating / 100 - 25;
     var mouthPath = Path()
       ..moveTo(mouthCenter.dx - 60, mouthCenter.dy)
